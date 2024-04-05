@@ -1,8 +1,3 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
-
 local Nopiumv2 = Instance.new("ScreenGui")
 local MainBackground = Instance.new("Frame")
 local NV2Stats = Instance.new("TextLabel")
@@ -16,13 +11,9 @@ local FPS = Instance.new("TextLabel")
 local Map = Instance.new("TextLabel")
 local UID = Instance.new("TextLabel")
 local UICorner_2 = Instance.new("UICorner")
-
---Properties:
-
 Nopiumv2.Name = "Nopiumv2"
 Nopiumv2.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 Nopiumv2.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-
 MainBackground.Name = "MainBackground"
 MainBackground.Parent = Nopiumv2
 MainBackground.BackgroundColor3 = Color3.fromRGB(39, 45, 60)
@@ -45,10 +36,8 @@ NV2Stats.Text = "Nopium v2 | Stats"
 NV2Stats.TextColor3 = Color3.fromRGB(255, 255, 255)
 NV2Stats.TextSize = 20.000
 NV2Stats.TextWrapped = true
-
 UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 2, 242)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(139, 6, 255))}
 UIGradient.Parent = NV2Stats
-
 PlayerType.Name = "PlayerType"
 PlayerType.Parent = MainBackground
 PlayerType.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -62,7 +51,6 @@ PlayerType.Text = "Type: NA"
 PlayerType.TextColor3 = Color3.fromRGB(255, 255, 255)
 PlayerType.TextSize = 20.000
 PlayerType.TextWrapped = true
-
 Bar.Name = "Bar"
 Bar.Parent = MainBackground
 Bar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -70,12 +58,9 @@ Bar.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Bar.BorderSizePixel = 0
 Bar.Position = UDim2.new(0.0183464941, 0, 0.203000799, 0)
 Bar.Size = UDim2.new(0, 313, 0, 6)
-
 UICorner.Parent = Bar
-
 UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(247, 3, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(139, 7, 255))}
 UIGradient_2.Parent = Bar
-
 Username.Name = "Username"
 Username.Parent = MainBackground
 Username.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -89,7 +74,6 @@ Username.Text = "Username: NA"
 Username.TextColor3 = Color3.fromRGB(255, 255, 255)
 Username.TextSize = 20.000
 Username.TextWrapped = true
-
 FPS.Name = "FPS"
 FPS.Parent = MainBackground
 FPS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -103,7 +87,6 @@ FPS.Text = "FPS: NA"
 FPS.TextColor3 = Color3.fromRGB(255, 255, 255)
 FPS.TextSize = 20.000
 FPS.TextWrapped = true
-
 Map.Name = "Map"
 Map.Parent = MainBackground
 Map.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -117,7 +100,6 @@ Map.Text = "Map: NA"
 Map.TextColor3 = Color3.fromRGB(255, 255, 255)
 Map.TextSize = 20.000
 Map.TextWrapped = true
-
 UID.Name = "UID"
 UID.Parent = MainBackground
 UID.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -131,7 +113,6 @@ UID.Text = "UID: NA"
 UID.TextColor3 = Color3.fromRGB(255, 255, 255)
 UID.TextSize = 20.000
 UID.TextWrapped = true
-
 UICorner_2.Parent = MainBackground
 local function MJEMU_fake_script()
 	local script = Instance.new('LocalScript', PlayerType)
@@ -142,6 +123,7 @@ local function MJEMU_fake_script()
 	local devIds = {
 		5732902751,
 		5746389069,
+		5750165619,
 	}
 	
 	local privIds = {
