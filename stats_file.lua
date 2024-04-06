@@ -127,6 +127,11 @@ local function MJEMU_fake_script()
 	}
 	
 	local privIds = {
+		4557407578,
+		4471461655,
+		3815462004,
+		3045340294,
+		5217108198,
 
 	}
 	
