@@ -5,5 +5,5 @@ if update then
     game.Players.LocalPlayer:Kick(text)
 	  warn(text)
 else
-    print("No updates found)
+    print("No updates found")
 end
